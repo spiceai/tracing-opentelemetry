@@ -74,3 +74,8 @@ harness = false
 [package.metadata.docs.rs]
 all-features = true
 rustdoc-args = ["--cfg", "docsrs"]
+
+[patch.crates-io]
+# Required until next release with https://github.com/open-telemetry/opentelemetry-rust/pull/2095 is included
+opentelemetry = { git = "https://github.com/open-telemetry/opentelemetry-rust.git", rev = "c3b59ba61055b7ec6916b6b88a9ac94f6656922b" }
+opentelemetry_sdk = { git = "https://github.com/open-telemetry/opentelemetry-rust.git", rev = "c3b59ba61055b7ec6916b6b88a9ac94f6656922b" }
